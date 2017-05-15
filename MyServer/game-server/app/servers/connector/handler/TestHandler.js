@@ -20,6 +20,7 @@ var Handler = function(app) {
 Handler.prototype.entry = function(msg, session, next) {
     console.log("game response is ok.");
     console.log(msg);
+    console.log("this is my first server");
     next(null, {code: 200, msg: 'game response is ok.'});
 };
 
